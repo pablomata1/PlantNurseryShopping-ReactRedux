@@ -38,12 +38,10 @@ const ProductList = () => {
 
    const incrementCounter = () => {
     setCartCounter(prevCounter => prevCounter + 1);
-    console.log('inside increment counter')
    }
 
    const decrementCounter = () => {
     setCartCounter(prevCounter => prevCounter - 1);
-    console.log('inside decrement counter')
 
    }
 
