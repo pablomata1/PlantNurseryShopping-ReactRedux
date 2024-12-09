@@ -13,9 +13,9 @@ const CartItem = ({ onContinueShopping, decrementCounter, incrementCounter }) =>
     return totalAmount;
   };
 
-  // const handleContinueShopping = (e) => {
-  //   alert('Functionality to be added for future reference');
-  // };
+  const handleCheckoutShopping = (e) => {
+    alert('Functionality to be added for future reference');
+  };
 
   const handleIncrement = (item) => {
     let temp = {...item};
