@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .landing-page {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   background-color: #f8f8f8;
 }
 
@@ -30,21 +30,17 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
- top: 100px;
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
-  gap: 20px;
+  padding: 50px;
+  gap: 200px;
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
-  transform: translate(-50%, -50%);
-  z-index: 1;
   text-align: center;
   /* background-color: red; */
   width: 400px;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -71,6 +67,7 @@
   height: 2px;
   background-color: #4caf50;
   margin: 10px 0;
+  border: rgb(247, 33, 33) 2px solid;
 }
 
 .get-started-button {
@@ -99,49 +96,34 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
   /* Adjust background opacity as needed */
-  transition: top 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.9);
   /* Smooth transition for top property */
-  overflow-y: auto;
+  transition: top 0.5s ease;
   /* Enable vertical scrolling */
+  overflow-y: auto;
   z-index: 2;
   /* Ensure it's above landing page content */
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); 
+  display: none;
 }
 
 .product-list-container.visible {
-  top: 0;
+  display: block;
+  top:0;
+}
+
+.aboutus_container {
+  max-width: 1000px; /* Adjust as needed */
+
 }
 /* LandingPage.css */
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
   }
 
-  .landing_content {
-    margin-top: 100px; /* Adjust as needed */
-    margin-left: 0;
-    width: 80%; /* Adjust as needed */
-    text-align: center;
-  }
-
-  .aboutus_container {
-    margin-top: 20px; /* Adjust as needed */
-    width: 80%; /* Adjust as needed */
-  }
 }
 
-@media screen and (max-width: 480px) {
-  .landing_content {
-    margin-top: 50px; /* Adjust as needed */
-    width: 90%; /* Adjust as needed */
-  }
 
-  .aboutus_container {
-    width: 90%; /* Adjust as needed */
-  }
-}
