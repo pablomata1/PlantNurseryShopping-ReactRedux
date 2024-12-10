@@ -64,7 +64,7 @@ const ProductList = ({ showAbout }) => {
                         <img src={plant.image} alt="plant" className='product-image' />
                         <div className='product-title'> {plant.name} </div>
                         <p>Description: {plant.description}</p>
-                        <div>Cost: {plant.cost}</div>
+                        <div className='product-cost'>Cost: {plant.cost}</div>
                         <button className='product-button' onClick={()=>handleAddToCart(plant)}>Add to Cart</button>
                     </div>
                 )}
