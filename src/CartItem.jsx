@@ -4,6 +4,8 @@ import { removeItem, updateQuantity } from './CartSlice';
 import './css/CartItem.css';
 
 const CartItem = ({ onContinueShopping ,decrementCounter, incrementCounter }) => {
+  
+  //Allows you to extract data from the Redux store state for use in this component, using a selector function.
   const cart = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
 
